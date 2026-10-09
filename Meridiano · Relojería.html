@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meridiano · Relojería suiza y de autor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5f3;--sf:#fff;--tx:#12171c;--mu:#5d676f;--ln:#d6dadc;--ac:#1f4e5f;--ac2:#163a47;--on:#fff;--err:#b3261e;--ok:#1b6b3a;--shade:rgba(18,23,28,.5);
+--d:'Newsreader',Georgia,'Times New Roman',serif;--b:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1215;--sf:#161c20;--tx:#eceeee;--mu:#97a1a8;--ln:#2a3238;--ac:#7fb6c9;--ac2:#a5d0df;--on:#0e1215;--err:#ff8a80;--ok:#7fd49a;--shade:rgba(0,0,0,.65)}}
+:root[data-theme="dark"]{--bg:#0e1215;--sf:#161c20;--tx:#eceeee;--mu:#97a1a8;--ln:#2a3238;--ac:#7fb6c9;--ac2:#a5d0df;--on:#0e1215;--err:#ff8a80;--ok:#7fd49a;--shade:rgba(0,0,0,.65)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px);scroll-behavior:smooth;height:auto}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.6 var(--b)}
+button,input,select{font:inherit;color:inherit}
+a{color:var(--ac)}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.util{background:var(--tx);color:var(--bg);font-size:14px;text-align:center;padding:7px 12px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--ln)}
+.bar{display:flex;align-items:center;height:72px;gap:28px}
+.logo{font:500 28px var(--d);letter-spacing:.14em;color:var(--tx);text-decoration:none}
+nav{display:flex;gap:26px;margin-left:24px}
+nav a{color:var(--tx);text-decoration:none;font-weight:500;font-size:15px;padding:4px 0;border-bottom:1px solid transparent}
+nav a:hover{border-color:var(--tx)}
+.tools{margin-left:auto;display:flex;gap:10px;align-items:center}
+.ibtn{background:none;border:1px solid var(--ln);border-radius:6px;padding:8px 14px;cursor:pointer;display:flex;gap:8px;align-items:center;font-weight:500}
+.ibtn:hover{border-color:var(--tx)}
+.cnt{background:var(--ac);color:var(--on);border-radius:99px;min-width:20px;height:20px;display:grid;place-items:center;font-size:12px;padding:0 6px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:72px 0 64px}
+h1,h2,h3{font-family:var(--d);font-weight:500;margin:0;line-height:1.1;letter-spacing:-.01em}
+h1{font-size:clamp(40px,6vw,76px)}
+.hero p{font-size:19px;color:var(--mu);max-width:46ch;margin:22px 0 0}
+.btn{display:inline-block;background:var(--ac);color:var(--on);border:1px solid var(--ac);border-radius:6px;padding:13px 26px;font-weight:600;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--ac2);border-color:var(--ac2)}
+.btn.o{background:none;color:var(--tx);border-color:var(--tx)}.btn.o:hover{background:var(--tx);color:var(--bg)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.stage{background:var(--sf);border:1px solid var(--ln);border-radius:4px;aspect-ratio:1/1.05;display:grid;place-items:center;position:relative}
+.stage svg{width:78%;height:auto}
+.stage figcaption{position:absolute;bottom:14px;left:18px;right:18px;display:flex;justify-content:space-between;font-size:14px;color:var(--mu)}
+.stage{margin:0}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.trust div{padding:22px 20px;border-right:1px solid var(--ln);font-size:14px;color:var(--mu)}.trust div:last-child{border:0}
+.trust b{display:block;color:var(--tx);font-size:16px;font-weight:600}
+.shop{padding:72px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+h2{font-size:clamp(30px,4vw,44px)}
+.head select{background:var(--sf);border:1px solid var(--ln);border-radius:6px;padding:9px 12px}
+.lay{display:grid;grid-template-columns:240px 1fr;gap:40px;align-items:start}
+.flt{position:sticky;top:calc(env(safe-area-inset-top,0px) + 96px)}
+.flt h3{font:600 15px var(--b);margin:0 0 10px}
+.flt fieldset{border:0;border-top:1px solid var(--ln);padding:16px 0;margin:0}
+.flt label{display:flex;gap:10px;align-items:center;padding:4px 0;cursor:pointer;font-size:15px}
+.flt input[type=checkbox],.flt input[type=radio]{accent-color:var(--ac);width:16px;height:16px}
+.flt input[type=range]{width:100%;accent-color:var(--ac)}
+.rv{display:flex;justify-content:space-between;font-size:14px;color:var(--mu)}
+.clr{background:none;border:0;color:var(--ac);text-decoration:underline;cursor:pointer;padding:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:4px;display:flex;flex-direction:column;text-align:left;padding:0;cursor:pointer}
+.card:hover{border-color:var(--tx)}
+.card .img{display:grid;place-items:center;padding:22px 30px 6px;border-bottom:1px solid var(--ln)}
+.card .img svg{width:100%;max-width:200px;height:auto}
+.ci{padding:16px 18px 18px;display:flex;flex-direction:column;gap:3px;flex:1}
+.ci small{color:var(--mu)}.ci h3{font-size:21px}
+.ci .p{margin-top:auto;padding-top:10px;display:flex;justify-content:space-between;align-items:center;font-weight:600}
+.tag{font-size:13px;color:var(--ac);font-weight:600}
+.empty{grid-column:1/-1;padding:48px;text-align:center;color:var(--mu);border:1px dashed var(--ln)}
+.svc{background:var(--tx);color:var(--bg);padding:72px 0}
+.svc .g{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-top:36px}
+.svc h3{font-size:24px;margin-bottom:8px}.svc p{margin:0;opacity:.75}
+form .row{margin-bottom:12px}
+label.l{display:block;font-size:14px;color:var(--mu);margin-bottom:4px}
+.in{width:100%;background:var(--bg);border:1px solid var(--ln);border-radius:6px;padding:11px 13px}
+.in:invalid:not(:placeholder-shown){border-color:var(--err)}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.msg{min-height:22px;font-size:14px;margin:6px 0}.msg.e{color:var(--err)}.msg.o{color:var(--ok)}
+footer{padding:36px 0 48px;font-size:14px;color:var(--mu)}
+.fg{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.scrim{position:fixed;inset:0;background:var(--shade);z-index:30;opacity:0;pointer-events:none;transition:opacity .2s}.scrim.on{opacity:1;pointer-events:auto}
+aside.dr{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--sf);border-left:1px solid var(--ln);z-index:40;transform:translateX(100%);transition:transform .25s;display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 20px) 22px calc(env(safe-area-inset-bottom,0px) + 20px)}
+aside.dr.open{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.x{background:none;border:1px solid var(--ln);border-radius:6px;width:36px;height:36px;cursor:pointer}
+.items{flex:1;overflow:auto}
+.it{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--ln)}
+.it svg{width:100%;height:auto}.it b{display:block;font-weight:600}.it small{color:var(--mu)}
+.q{display:flex;gap:8px;align-items:center;margin-top:6px}.q button{width:26px;height:26px;border:1px solid var(--ln);border-radius:4px;background:none;cursor:pointer}
+.ship{font-size:14px;color:var(--mu);margin:12px 0 6px}
+.bw{height:4px;background:var(--ln);border-radius:4px;overflow:hidden;margin-bottom:12px}.bw i{display:block;height:100%;background:var(--ac)}
+.tt{display:flex;justify-content:space-between;font:500 24px var(--d);padding:10px 0 14px}
+dialog{background:var(--sf);color:var(--tx);border:1px solid var(--ln);border-radius:6px;padding:0;width:min(860px,94vw);max-height:92vh}
+dialog::backdrop{background:var(--shade)}
+.dd{display:grid;grid-template-columns:1fr 1fr}
+.dd .pic{background:var(--bg);display:grid;place-items:center;padding:32px}.dd .pic svg{width:100%;max-width:300px;height:auto}
+.dd .tx{padding:32px;position:relative}
+.dd .tx .x{position:absolute;top:14px;right:14px}
+.spec{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}
+.spec th{text-align:left;font-weight:400;color:var(--mu);padding:8px 0;border-top:1px solid var(--ln)}.spec td{text-align:right;padding:8px 0;border-top:1px solid var(--ln)}
+.ck{padding:28px;width:min(480px,94vw)}
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 24px);transform:translate(-50%,20px);background:var(--tx);color:var(--bg);padding:11px 20px;border-radius:6px;opacity:0;transition:.2s;z-index:60;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:900px){.hero,.lay,.dd,.svc .g{grid-template-columns:1fr}.hero{padding:40px 0}.flt{position:static}.trust{grid-template-columns:1fr 1fr}.trust div{border-bottom:1px solid var(--ln)}nav{display:none}.stage{max-width:420px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="util">Envío asegurado y garantía internacional de 5 años en todos los relojes</div>
+<header><div class="wrap bar">
+<a class="logo" href="#top">MERIDIANO</a>
+<nav aria-label="Principal"><a href="#coleccion">Colección</a><a href="#servicio">Servicio</a><a href="#contacto">Contacto</a></nav>
+<div class="tools"><button class="ibtn" id="openCart" aria-label="Abrir carrito">Carrito <span class="cnt" id="cnt">0</span></button></div>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<h1>Relojes hechos para durar más que una vida.</h1>
+<p>Movimientos mecánicos de manufactura suiza, cajas en acero y titanio, y un servicio técnico que los acompaña por generaciones.</p>
+<div class="cta"><a class="btn" href="#coleccion">Ver la colección</a><a class="btn o" href="#servicio">Garantía y servicio</a></div>
+</div>
+<figure class="stage"><svg id="heroW" viewBox="0 0 200 200" role="img" aria-label="Reloj Meridiano marcando la hora actual"></svg><figcaption><span>Clásico 38, esfera azul medianoche</span><span id="clk"></span></figcaption></figure>
+</div>
+<div class="wrap"><div class="trust">
+<div><b>Autenticidad certificada</b>Cada pieza con certificado y número de serie</div>
+<div><b>Pago cifrado</b>Sin guardar datos de tarjeta</div>
+<div><b>Envío asegurado</b>Seguimiento y firma en la entrega</div>
+<div><b>Devolución en 30 días</b>Sin costo y sin preguntas</div>
+</div></div>
+
+<section class="shop" id="coleccion"><div class="wrap">
+<div class="head"><h2>La colección</h2>
+<select id="sort" aria-label="Ordenar"><option value="feat">Destacados</option><option value="asc">Precio, de menor a mayor</option><option value="desc">Precio, de mayor a menor</option></select></div>
+<div class="lay">
+<div class="flt" id="flt"></div>
+<div><div class="grid" id="grid" aria-live="polite"></div></div>
+</div></div></section>
+
+<section class="svc" id="servicio"><div class="wrap">
+<h2>Un reloj es una relación a largo plazo</h2>
+<div class="g">
+<div><h3>Garantía de 5 años</h3><p>Cubre defectos de fabricación del movimiento y la caja, con registro digital de cada pieza.</p></div>
+<div><h3>Servicio técnico propio</h3><p>Revisión, pulido y cambio de piezas realizados por relojeros certificados.</p></div>
+<div><h3>Asesoría personal</h3><p>Te ayudamos a elegir tamaño, material y correa según tu muñeca y tu uso diario.</p></div>
+</div></div></section>
+
+<section class="shop" id="contacto"><div class="wrap" style="max-width:560px">
+<h2>Hablá con un asesor</h2>
+<p style="color:var(--mu)">Dejanos tu correo y te respondemos en menos de 24 horas hábiles.</p>
+<form id="cf" novalidate>
+<div class="row"><label class="l" for="cm">Correo electrónico</label><input class="in" id="cm" type="email" maxlength="80" autocomplete="email" required placeholder=" "></div>
+<div class="hp" aria-hidden="true"><input id="cHp" tabindex="-1" autocomplete="off"></div>
+<div class="msg" id="cMsg" role="status"></div>
+<button class="btn" type="submit">Solicitar contacto</button>
+</form></div></section>
+</main>
+
+<footer><div class="wrap fg"><div><b style="color:var(--tx)">Meridiano</b> · Relojería suiza y de autor</div><div>Proyecto de portfolio: productos y pagos de demostración.</div></div></footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="dr" id="drawer" aria-label="Carrito" aria-hidden="true">
+<div class="dh"><h2 style="font-size:26px">Tu carrito</h2><button class="x" id="closeCart" aria-label="Cerrar carrito">✕</button></div>
+<div class="items" id="items"></div>
+<div class="ship" id="ship"></div><div class="bw"><i id="bar" style="width:0"></i></div>
+<div class="tt"><span>Subtotal</span><span id="total"></span></div>
+<button class="btn" id="checkout">Continuar al pago</button>
+</aside>
+
+<dialog id="pd" aria-labelledby="pdn"><div class="dd"><div class="pic" id="pdPic"></div><div class="tx">
+<button class="x" id="pdX" aria-label="Cerrar">✕</button>
+<small id="pdC" style="color:var(--mu)"></small><h2 id="pdn" style="font-size:34px"></h2>
+<p id="pdP" style="font:500 26px var(--d);margin:8px 0"></p>
+<table class="spec" id="pdS"></table>
+<button class="btn" id="pdA" style="width:100%">Agregar al carrito</button>
+</div></div></dialog>
+
+<dialog id="dlg" class="ck" aria-labelledby="dt">
+<h2 id="dt" style="font-size:28px;margin-bottom:14px">Datos de envío</h2>
+<form id="ck" novalidate>
+<div class="row"><label class="l" for="cn">Nombre completo</label><input class="in" id="cn" maxlength="60" autocomplete="name" required></div>
+<div class="row"><label class="l" for="ce">Correo electrónico</label><input class="in" id="ce" type="email" maxlength="80" autocomplete="email" required></div>
+<div class="row"><label class="l" for="ca">Dirección</label><input class="in" id="ca" maxlength="100" autocomplete="street-address" required></div>
+<div class="row"><label class="l" for="cz">Código postal</label><input class="in" id="cz" maxlength="8" autocomplete="postal-code" required></div>
+<div class="hp" aria-hidden="true"><input id="kHp" tabindex="-1" autocomplete="off"></div>
+<p style="font-size:13px;color:var(--mu)">Demostración: no se piden datos de tarjeta ni se envía nada a un servidor.</p>
+<div class="msg" id="kMsg" role="alert"></div>
+<div style="display:flex;gap:10px;justify-content:flex-end"><button type="button" class="btn o" id="kCancel">Volver</button><button class="btn" type="submit">Confirmar pedido</button></div>
+</form></dialog>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(()=>{
+'use strict';
+const D=[
+[1,'Clásico 38','Clásica','Acero','Automático',890,'#f1eee6','#4a3322','38 mm','50 m'],
+[2,'Clásico 38 Medianoche','Clásica','Acero','Automático',920,'#1b3556','#1d1d1f','38 mm','50 m'],
+[3,'Clásico 36 Cuarzo','Clásica','Acero','Cuarzo',420,'#e9ecee','#6b6f73','36 mm','30 m'],
+[4,'Aviador 41','Aviador','Acero','Automático',1180,'#1c1f22','#5b4a2e','41 mm','100 m'],
+[5,'Aviador 41 Titanio','Aviador','Titanio','Automático',1650,'#3a4147','#25282b','41 mm','100 m'],
+[6,'Aviador Cronógrafo','Aviador','Acero','Automático',2290,'#e4e2dc','#303030','42 mm','100 m'],
+[7,'Abisal 300','Buzo','Acero','Automático',1490,'#0f2a43','#0f2a43','42 mm','300 m'],
+[8,'Abisal 300 Titanio','Buzo','Titanio','Automático',2150,'#14181b','#14181b','42 mm','300 m'],
+[9,'Abisal Cuarzo','Buzo','Acero','Cuarzo',560,'#233b2b','#233b2b','40 mm','200 m'],
+[10,'Ejecutivo 39','Ejecutivo','Oro rosa','Automático',4850,'#f4efe7','#3b2a22','39 mm','30 m'],
+[11,'Ejecutivo Fino','Ejecutivo','Acero','Cuarzo',680,'#f0f1f1','#1d1d1f','35 mm','30 m'],
+[12,'Ejecutivo 39 Esqueleto','Ejecutivo','Oro rosa','Automático',5400,'#2a2a2e','#1d1d1f','39 mm','30 m']
+].map(a=>Object.freeze({id:a[0],n:a[1],c:a[2],m:a[3],v:a[4],p:a[5],d:a[6],s:a[7],z:a[8],w:a[9]}));
+const byId=new Map(D.map(x=>[x.id,x]));
+const CASE={Acero:['#c9ced2','#8d949a'],Titanio:['#9aa1a6','#5f666b'],'Oro rosa':['#e3b9a0','#b88467']};
+const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
+const money=n=>'US$ '+n.toLocaleString('es-AR');
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=String(x);return e};
+const sv=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.append(e);return e};
+const clean=s=>String(s).replace(/[\u0000-\u001f<>]/g,'').trim().slice(0,100);
+const MAXQ=5,FREE=1000;
+const dark=c=>{const n=parseInt(c.slice(1),16);return ((n>>16)*.3+((n>>8)&255)*.59+(n&255)*.11)<110};
+
+/* Reloj vectorial: se construye con el DOM, sin cadenas HTML */
+function watch(p,live){
+ const s=sv('svg',{viewBox:'0 0 200 200','aria-hidden':'true'});
+ const ink=dark(p.d)?'#f2f2f0':'#16191c';
+ if(!live){sv('rect',{x:78,y:0,width:44,height:200,rx:6,fill:p.s},s)}
+ else{sv('rect',{x:80,y:4,width:40,height:44,rx:8,fill:p.s},s);sv('rect',{x:80,y:152,width:40,height:44,rx:8,fill:p.s},s)}
+ const cs=CASE[p.m];
+ sv('circle',{cx:100,cy:100,r:66,fill:cs[0],stroke:cs[1],'stroke-width':2},s);
+ sv('circle',{cx:100,cy:100,r:56,fill:p.d,stroke:cs[1],'stroke-width':1},s);
+ sv('rect',{x:166,y:96,width:7,height:8,rx:1.5,fill:cs[1]},s);
+ for(let i=0;i<60;i++){const a=i*6*Math.PI/180,big=i%5===0,r1=big?46:50,r2=53;
+  sv('line',{x1:100+Math.sin(a)*r1,y1:100-Math.cos(a)*r1,x2:100+Math.sin(a)*r2,y2:100-Math.cos(a)*r2,stroke:ink,'stroke-width':big?2:.7},s)}
+ const hand=(len,w,col)=>sv('line',{x1:100,y1:104,x2:100,y2:100-len,stroke:col,'stroke-width':w,'stroke-linecap':'round'},s);
+ const hh=hand(30,3.4,ink),mh=hand(43,2.4,ink),sh=hand(48,1,'#c0392b');
+ sv('circle',{cx:100,cy:100,r:3,fill:ink},s);
+ const set=(h,m,sec)=>{hh.setAttribute('transform','rotate('+((h%12)*30+m*.5)+' 100 100)');mh.setAttribute('transform','rotate('+(m*6+sec*.1)+' 100 100)');sh.setAttribute('transform','rotate('+(sec*6)+' 100 100)')};
+ set(10,10,30);s.set=set;return s}
+
+let F={col:new Set(),mat:new Set(),mov:'Todos',max:5500},sort='feat',cart=new Map(),last=null,cur=null;
+const store={
+ load(){try{const r=JSON.parse(localStorage.getItem('mer_cart')||'[]');if(!Array.isArray(r))return;for(const i of r.slice(0,30))if(Array.isArray(i)&&byId.has(i[0])&&Number.isInteger(i[1])&&i[1]>0)cart.set(i[0],Math.min(i[1],MAXQ))}catch(e){cart=new Map()}},
+ save(){try{localStorage.setItem('mer_cart',JSON.stringify([...cart]))}catch(e){}}};
+function toast(t){const x=$('toast');x.textContent=t;x.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>x.classList.remove('on'),2000)}
+
+function filters(){
+ const f=$('flt');f.replaceChildren();
+ const grp=(title,vals,set)=>{const fs=el('fieldset');fs.append(Object.assign(el('h3','',title)));
+  vals.forEach(v=>{const l=el('label');const i=el('input');i.type='checkbox';i.checked=set.has(v);i.onchange=()=>{i.checked?set.add(v):set.delete(v);grid()};l.append(i,el('span','',v));fs.append(l)});f.append(fs)};
+ grp('Colección',[...new Set(D.map(x=>x.c))],F.col);
+ grp('Material',[...new Set(D.map(x=>x.m))],F.mat);
+ const fm=el('fieldset');fm.append(el('h3','','Movimiento'));
+ ['Todos','Automático','Cuarzo'].forEach(v=>{const l=el('label');const i=el('input');i.type='radio';i.name='mov';i.checked=F.mov===v;i.onchange=()=>{F.mov=v;grid()};l.append(i,el('span','',v));fm.append(l)});f.append(fm);
+ const fp=el('fieldset');fp.append(el('h3','','Precio máximo'));
+ const r=el('input');r.type='range';r.min=400;r.max=5500;r.step=100;r.value=F.max;r.setAttribute('aria-label','Precio máximo');
+ const rv=el('div','rv');const a=el('span','',money(400)),b=el('span','',money(F.max));rv.append(a,b);
+ r.oninput=()=>{F.max=Number(r.value);b.textContent=money(F.max);grid()};fp.append(r,rv);f.append(fp);
+ const c=el('button','clr','Limpiar filtros');c.type='button';c.onclick=()=>{F={col:new Set(),mat:new Set(),mov:'Todos',max:5500};filters();grid()};f.append(c)}
+
+function grid(){
+ const g=$('grid');g.replaceChildren();
+ let l=D.filter(x=>(!F.col.size||F.col.has(x.c))&&(!F.mat.size||F.mat.has(x.m))&&(F.mov==='Todos'||x.v===F.mov)&&x.p<=F.max);
+ if(sort==='asc')l=[...l].sort((a,b)=>a.p-b.p);if(sort==='desc')l=[...l].sort((a,b)=>b.p-a.p);
+ if(!l.length){g.append(el('div','empty','Ningún reloj coincide con esos filtros. Probá ampliando el rango de precio.'));return}
+ l.forEach(x=>{const c=el('button','card');c.type='button';c.setAttribute('aria-label','Ver '+x.n+', '+money(x.p));
+  const im=el('div','img');im.append(watch(x));
+  const i=el('div','ci');i.append(el('small','',x.c+' · '+x.m),el('h3','',x.n),el('small','',x.v+' · '+x.z));
+  const p=el('div','p');p.append(el('span','',money(x.p)),el('span','tag','Ver detalle'));i.append(p);
+  c.append(im,i);c.onclick=()=>detail(x);g.append(c)})}
+
+function detail(x){cur=x;$('pdPic').replaceChildren(watch(x));$('pdC').textContent=x.c+' · '+x.m;$('pdn').textContent=x.n;$('pdP').textContent=money(x.p);
+ const t=$('pdS');t.replaceChildren();[['Movimiento',x.v],['Diámetro',x.z],['Resistencia al agua',x.w],['Material de la caja',x.m],['Cristal','Zafiro con antirreflejo']].forEach(([k,v])=>{const r=el('tr');r.append(el('th','',k),el('td','',v));t.append(r)});
+ $('pd').showModal()}
+$('pdX').onclick=()=>$('pd').close();
+$('pdA').onclick=()=>{if(cur){add(cur.id);$('pd').close()}};
+$('pd').addEventListener('click',e=>{if(e.target===$('pd'))$('pd').close()});
+
+function add(id){if(!byId.has(id))return;const q=(cart.get(id)||0)+1;if(q>MAXQ)return toast('Máximo '+MAXQ+' unidades por modelo');cart.set(id,q);sync();toast('Agregado al carrito')}
+function setQ(id,d){const q=(cart.get(id)||0)+d;if(q<=0)cart.delete(id);else if(q<=MAXQ)cart.set(id,q);sync()}
+const subtotal=()=>{let t=0;cart.forEach((q,id)=>t+=byId.get(id).p*q);return t};
+function sync(){store.save();const b=$('items');b.replaceChildren();let n=0;
+ if(!cart.size)b.append(el('p','empty','Tu carrito está vacío. Explorá la colección para empezar.'));
+ cart.forEach((q,id)=>{const p=byId.get(id);n+=q;const r=el('div','it');r.append(watch(p));
+  const m=el('div');m.append(el('b','',p.n),el('small','',money(p.p)));
+  const qq=el('div','q');const mi=el('button','','−');mi.type='button';mi.setAttribute('aria-label','Quitar una unidad');mi.onclick=()=>setQ(id,-1);
+  const pl=el('button','','+');pl.type='button';pl.setAttribute('aria-label','Sumar una unidad');pl.onclick=()=>setQ(id,1);
+  qq.append(mi,el('span','',q),pl);m.append(qq);r.append(m,el('b','',money(p.p*q)));b.append(r)});
+ const t=subtotal();$('cnt').textContent=n;$('total').textContent=money(t);$('checkout').disabled=!cart.size;
+ $('bar').style.width=Math.min(100,t/FREE*100)+'%';
+ $('ship').textContent=!cart.size?'Envío gratuito en pedidos desde '+money(FREE):t>=FREE?'Tu pedido tiene envío gratuito.':'Te faltan '+money(FREE-t)+' para el envío gratuito.'}
+
+function openCart(){last=document.activeElement;$('drawer').classList.add('open');$('drawer').setAttribute('aria-hidden','false');$('scrim').classList.add('on');$('closeCart').focus()}
+function closeCart(){$('drawer').classList.remove('open');$('drawer').setAttribute('aria-hidden','true');$('scrim').classList.remove('on');if(last)last.focus()}
+$('openCart').onclick=openCart;$('closeCart').onclick=closeCart;$('scrim').onclick=closeCart;
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('drawer').classList.contains('open'))closeCart()});
+$('sort').onchange=e=>{sort=['feat','asc','desc'].includes(e.target.value)?e.target.value:'feat';grid()};
+
+const reMail=/^[^\s@<>]{1,64}@[^\s@<>]+\.[^\s@<>]{2,}$/,reName=/^[\p{L}\p{M}' .-]{2,60}$/u,reAddr=/^[\p{L}\p{N}\p{M}\s.,'#°\/-]{5,100}$/u,rePost=/^[A-Za-z0-9 -]{3,8}$/;
+let lt=0;const fast=()=>{const n=Date.now();if(n-lt<1500)return true;lt=n;return false};
+const say=(id,t,ok)=>{const m=$(id);m.textContent=t;m.className='msg '+(ok?'o':'e')};
+$('cf').addEventListener('submit',e=>{e.preventDefault();if($('cHp').value)return;if(fast())return say('cMsg','Esperá un momento antes de volver a intentar.');
+ if(!reMail.test(clean($('cm').value)))return say('cMsg','Ingresá un correo válido, por ejemplo nombre@dominio.com.');
+ say('cMsg','Recibimos tu solicitud. Te escribiremos en menos de 24 horas hábiles.',true);$('cf').reset()});
+$('checkout').onclick=()=>{if(!cart.size)return;closeCart();$('kMsg').textContent='';$('dlg').showModal()};
+$('kCancel').onclick=()=>$('dlg').close();
+$('ck').addEventListener('submit',e=>{e.preventDefault();if($('kHp').value)return;if(fast())return say('kMsg','Esperá un momento antes de volver a intentar.');
+ if(!reName.test(clean($('cn').value)))return say('kMsg','Escribí tu nombre completo, solo con letras.');
+ if(!reMail.test(clean($('ce').value)))return say('kMsg','El correo no tiene un formato válido.');
+ if(!reAddr.test(clean($('ca').value)))return say('kMsg','La dirección debe tener entre 5 y 100 caracteres y no admite símbolos especiales.');
+ if(!rePost.test(clean($('cz').value)))return say('kMsg','Revisá el código postal.');
+ const t=subtotal();/* total recalculado desde el catálogo, nunca desde el cliente */
+ const ref='MR-'+Array.from(crypto.getRandomValues(new Uint8Array(4)),b=>b.toString(16).padStart(2,'0')).join('').toUpperCase();
+ cart.clear();sync();$('ck').reset();$('dlg').close();toast('Pedido '+ref+' confirmado · '+money(t))});
+
+/* Único movimiento de la página: el reloj principal marca la hora real */
+const hw=watch({d:'#1b3556',s:'#1d1d1f',m:'Acero'},true);hw.setAttribute('viewBox','0 0 200 200');
+const hs=$('heroW');hs.replaceChildren(...hw.childNodes);
+const hands=[...hs.querySelectorAll('line')].slice(-3);
+function tick(){const n=new Date(),h=n.getHours()%12,m=n.getMinutes(),s=n.getSeconds();
+ hands[0].setAttribute('transform','rotate('+(h*30+m*.5)+' 100 100)');hands[1].setAttribute('transform','rotate('+(m*6+s*.1)+' 100 100)');hands[2].setAttribute('transform','rotate('+(s*6)+' 100 100)');
+ $('clk').textContent=n.toLocaleTimeString('es-AR',{hour:'2-digit',minute:'2-digit'})}
+tick();setInterval(tick,1000);
+
+store.load();filters();grid();sync();
+})();
+</script>
+</body>
+</html>
